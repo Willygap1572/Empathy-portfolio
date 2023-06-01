@@ -114,5 +114,253 @@ svg {
 }
 
 .section {
-    padding-block: 5rem 2rem;
+    padding-block: 7rem 2rem;
+    align-items: center;
+}
+
+/*Specific css*/
+
+
+
+.header, .home, .skills, .projects { /*Different sections*/
+    background-color: var(--container-color);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list{
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+.nav__logo {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.nav__logo span{
+    color: var(--first-color);
+}
+
+.nav__link {
+    color: var(--title-color);
+    transition: color .4s;
+}
+
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: box-shadow .4s;
+}
+
+.button:hover {
+    box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+}
+
+/*HOME*/
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home__container {
+    grid-template-columns: 455px 550px;
+    column-gap: 7rem;
+    padding-block: 2rem 3rem;
+    margin-inline: auto;
+    align-items: center;
+}
+
+.home__data {
+    margin-bottom: 2rem;
+}
+
+.home__blob {
+    fill: var(--first-color);
+    filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
+    width: 550px;
+}
+
+.home__content {
+    row-gap: 4.5rem;
+}
+
+.home__description{
+    margin-block: 1.5rem 2.5rem;
+}
+
+.home__social{
+    display: flex;
+    justify-self: center;
+    column-gap: 2rem;
+}
+
+.home__social-link {
+    display: flex;
+    background-color: var(--first-color-alt);
+    padding: .5rem;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: transform .4s;
+
+}
+
+.home__social-link:hover {
+    transform: translateY(-.25rem);
+}
+
+.home__subtitle span,
+.home__title {
+    color: var(--first-color);
+}
+
+.home__title {
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+/*ABOUT*/
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__data {
+    text-align: initial;
+}
+
+.about__container {
+    grid-template-columns: 455px 550px;
+    column-gap: 7rem;
+    padding-block: 2rem 3rem;
+    margin-inline: auto;
+    align-items: center;
+}
+
+.section__subtitle span {
+    color: var(--first-color);
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+}
+
+.section__description {
+    margin-bottom: 2rem;
+}
+
+.about__blob path{
+    stroke: var(--first-color);
+    width: 550px;   
+}
+
+/*SKILLS*/
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+}
+
+
+.skills__container {
+    grid-template-columns: 455px 550px;
+    column-gap: 7rem;
+    padding-block: 2rem 3rem;
+    margin-inline: auto;
+    align-items: center;
+}
+
+.skills__content {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 8rem;
+}
+
+.skills__block {
+    display: grid;
+    list-style: decimal-leading-zero;
+}
+
+.skills__item {
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+}
+
+.skills__item::marker {
+    color: var(--first-color);
+}
+
+/*SERVICES*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__container {
+    row-gap: 2rem;
+    padding-block: 1rem;
+}
+
+.services__data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.services__card {
+    background-color: var(--container-color);
+    padding: 3rem 1.25rem;
+    align-items: center;
+    text-align: center;
+}
+
+.services__card:hover {
+    border: 2px solid var(--first-color);
+}
+
+.services__title {
+    margin-bottom: 2rem;
+}
+
+.services__icon {
+    display: block;
+    font-size: 4rem;
+    color: var(--first-color);
+    margin-bottom: .75rem;
 }
