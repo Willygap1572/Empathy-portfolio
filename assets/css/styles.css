@@ -122,7 +122,11 @@ svg {
 
 
 
-.header, .home, .skills, .projects { /*Different sections*/
+.header,
+.home,
+.skills,
+.projects {
+    /*Different sections*/
     background-color: var(--container-color);
 }
 
@@ -143,7 +147,7 @@ svg {
     align-items: center;
 }
 
-.nav__list{
+.nav__list {
 
     display: flex;
     flex-direction: row;
@@ -155,7 +159,7 @@ svg {
     font-weight: var(--font-semi-bold);
 }
 
-.nav__logo span{
+.nav__logo span {
     color: var(--first-color);
 }
 
@@ -164,7 +168,7 @@ svg {
     transition: color .4s;
 }
 
-.nav__link:hover{
+.nav__link:hover {
     color: var(--first-color);
 }
 
@@ -212,11 +216,11 @@ svg {
     row-gap: 4.5rem;
 }
 
-.home__description{
+.home__description {
     margin-block: 1.5rem 2.5rem;
 }
 
-.home__social{
+.home__social {
     display: flex;
     justify-self: center;
     column-gap: 2rem;
@@ -243,7 +247,7 @@ svg {
 }
 
 .home__title {
-    font-size: var(--bigger-font-size);
+    font-size: var(--h1-font-size);
     font-weight: var(--font-semi-bold);
 }
 
@@ -280,43 +284,51 @@ svg {
     margin-bottom: 2rem;
 }
 
-.about__blob path{
+.about__blob path {
     stroke: var(--first-color);
-    width: 550px;   
+    width: 550px;
 }
 
 /*SKILLS*/
 
 .skills {
     display: flex;
-    flex-direction: row;
-    margin-inline: auto;
+    align-items: center;
+    justify-content: space-around;
 }
-
 
 .skills__container {
-    grid-template-columns: 455px 550px;
-    column-gap: 7rem;
-    padding-block: 2rem 3rem;
-    margin-inline: auto;
-    align-items: center;
+    grid-template-columns: 340px 425px;
+    column-gap: 10rem;
+    padding-bottom: 4rem;
 }
 
-.skills__content {
+.skills__description {
+    margin-bottom: 3rem;
+}
+
+.skills__content,
+.skills__group {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
     column-gap: 8rem;
 }
 
-.skills__block {
-    display: grid;
+.skills__content {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 8rem;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.skills__group {
+    row-gap: 1.5rem;
     list-style: decimal-leading-zero;
 }
 
 .skills__item {
-    font-weight: var(--font-semi-bold);
-    color: var(--title-color);
+    font-weight: var(--font-medium);
     font-size: var(--h3-font-size);
+    color: var(--title-color);
 }
 
 .skills__item::marker {
@@ -329,6 +341,7 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .services__container {
@@ -363,4 +376,120 @@ svg {
     font-size: 4rem;
     color: var(--first-color);
     margin-bottom: .75rem;
+}
+
+/*PROJECTS*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects__data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+}
+
+.projects__card {
+    position: relative;
+    border-radius: 1rem;
+    height: 200px;
+    width: 360px;
+    overflow: hidden;
+}
+
+.projects__modal {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 0%, hsla(var(--hue), 70%, 40%, .8) 120%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: bottom .4s;
+}
+
+.projects__card:hover .projects__modal {
+    bottom: 0;
+}
+
+.projects__title {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.projects__subtitle {
+    color: var(--title-color);
+    font-weight: var(--font-regular);
+}
+
+.projects__button {
+    color: var(--title-color);
+}
+
+/*CONTACT*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__container {
+    grid-template-columns: 800px;
+    padding-block: 2.5rem 2rem;
+}
+
+.contact__form,
+.contact__data {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact__form {
+    position: relative;
+}
+
+.contact__text,
+.contact__name,
+.contact__email {
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    background-color: var(--container-color);
+    color: var(--title-color);
+}
+
+
+.contact__name::placeholder {
+    color: var(--text-color);
+}
+
+.contact__email::placeholder {
+    color: var(--text-color);
+}
+
+.contact__text::placeholder {
+    color: var(--text-color);
+}
+
+.contact__text {
+    height: 20rem;
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.contact__button {
+    justify-self: center;
+    cursor: pointer;
 }

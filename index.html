@@ -16,7 +16,7 @@
 <body class="body" id="body">
   <header class="header" id="header">
     <nav class="container nav">
-      <a href="#" class="nav__logo">
+      <a href="#home" class="nav__logo">
         Guillermo <span>de Andrés</span>
       </a>
       <div class="nav__menu" id="nav-menu">
@@ -110,16 +110,6 @@
 
     <section class="about section" id="about">
       <div class="about__container container grid">
-        <div class="about__data">
-          <h3 class="section__subtitle">My <span>Intro</span></h3>
-          <h2 class="section__title">About Me</h2>
-          <p class="section__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sed tempora
-            ut
-            enim? Eaque veniam ea vel maxime dicta perspiciatis excepturi atque dolore! Repudiandae voluptates
-            reiciendis quis assumenda deserunt mollitia?</p>
-          <a href="#contact" class="button">Contact me!</a>
-        </div>
-
         <div class="about__image">
           <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="maskBorder" mask-type="alpha">
@@ -154,6 +144,15 @@
               <image class="about__img" id="imageBorder" width="640" height="940" href="assets/img/gde-andr.png" />
             </defs>
           </svg>
+        </div>
+        <div class="about__data">
+          <h3 class="section__subtitle">My <span>Intro</span></h3>
+          <h2 class="section__title">About Me</h2>
+          <p class="section__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sed tempora
+            ut
+            enim? Eaque veniam ea vel maxime dicta perspiciatis excepturi atque dolore! Repudiandae voluptates
+            reiciendis quis assumenda deserunt mollitia?</p>
+          <a href="#contact" class="button">Contact me!</a>
         </div>
       </div>
     </section>
@@ -196,22 +195,22 @@
 
         <div class="services__data">
           <article class="services__card">
-            <h3 class="services__title">Data Analyst</h3>
             <i class="ri-pie-chart-line services__icon"></i>
+            <h3 class="services__title">Data Analyst</h3>
             <p class="services__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis non
               repudiandae quibusdam. Asperiores, quisquam? Est placeat tenetur nulla, ipsum, dolores saepe quibusdam,
               odit hic distinctio deleniti sit dicta alias odio?</p>
           </article>
           <article class="services__card">
-            <h3 class="services__title">DJANGO Developer</h3>
             <i class="ri-code-s-slash-line services__icon"></i>
+            <h3 class="services__title">DJANGO Developer</h3>
             <p class="services__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis non
               repudiandae quibusdam. Asperiores, quisquam? Est placeat tenetur nulla, ipsum, dolores saepe quibusdam,
               odit hic distinctio deleniti sit dicta alias odio?</p>
           </article>
           <article class="services__card">
-            <h3 class="services__title">3D Model</h3>
             <i class="ri-blender-fill services__icon"></i>
+            <h3 class="services__title">3D Model</h3>
             <p class="services__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis non
               repudiandae quibusdam. Asperiores, quisquam? Est placeat tenetur nulla, ipsum, dolores saepe quibusdam,
               odit hic distinctio deleniti sit dicta alias odio?</p>
@@ -227,57 +226,101 @@
         <h2 class="section__title">Recent Projects</h2>
 
         <div class="projects__data">
-          <article class="project__card">
-            <h3 class="project__title">Project1</h3>
-            <p class="project__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque a nihil? Magni, placeat. Hic
-              illo, provident nemo, eius officiis saepe quo totam temporibus aut expedita dolore. Quasi, animi alias!
-            </p>
+          <article class="projects__card">
+            <img src="assets/img/project1.png" alt="porjects image" class="projects__img">
+            <div class="projects__modal">
+              <span class="projects__subtitle">MQTT</span>
+              <h2 class="projects__title">Domotics</h2>
+
+              <a href="https://github.com/Willygap1572/Domotics" class="projects__button">
+                View code <i class="ri-external-link-line "></i>
+              </a>
+            </div>
           </article>
 
-          <article class="project__card">
-            <h3 class="project__title">Project2</h3>
-            <p class="project__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque a nihil? Magni, placeat. Hic
-              illo, provident nemo, eius officiis saepe quo totam temporibus aut expedita dolore. Quasi, animi alias!
-            </p>
+          <article class="projects__card">
+            <img src="assets/img/project2.png" alt="porjects image" class="projects__img">
+            <div class="projects__modal">
+              <span class="projects__subtitle">Server</span>
+              <h2 class="projects__title">HTTP Server</h2>
+
+              <a href="https://github.com/Willygap1572/HTTP-server" class="projects__button">
+                View code <i class="ri-external-link-line "></i>
+              </a>
+            </div>
           </article>
 
-          <article class="project__card">
-            <h3 class="project__title">Project3</h3>
-            <p class="project__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque a nihil? Magni, placeat. Hic
-              illo, provident nemo, eius officiis saepe quo totam temporibus aut expedita dolore. Quasi, animi alias!
-            </p>
+          <article class="projects__card">
+            <img src="assets/img/project3.png" alt="porjects image" class="projects__img">
+            <div class="projects__modal">
+              <span class="projects__subtitle">DJANGO Web page</span>
+              <h2 class="projects__title">Kahoot Clone Server</h2>
+
+              <a href="https://github.com/Willygap1572/kahootClone-DjangoServer" class="projects__button">
+                View code <i class="ri-external-link-line "></i>
+              </a>
+            </div>
           </article>
 
-          <article class="project__card">
-            <h3 class="project__title">Project4</h3>
-            <p class="project__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque a nihil? Magni, placeat. Hic
-              illo, provident nemo, eius officiis saepe quo totam temporibus aut expedita dolore. Quasi, animi alias!
-            </p>
+          <article class="projects__card">
+            <img src="assets/img/project3.png" alt="porjects image" class="projects__img">
+            <div class="projects__modal">
+              <span class="projects__subtitle">VUE.js Web page</span>
+              <h2 class="projects__title">Kahoot Clone Client</h2>
+
+              <a href="https://github.com/Willygap1572/kahootClone-vueClient" class="projects__button">
+                View code <i class="ri-external-link-line "></i>
+              </a>
+            </div>
           </article>
 
-          <article class="project__card">
-            <h3 class="project__title">Project5</h3>
-            <p class="project__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque a nihil? Magni, placeat. Hic
-              illo, provident nemo, eius officiis saepe quo totam temporibus aut expedita dolore. Quasi, animi alias!
-            </p>
+          <article class="projects__card">
+            <img src="assets/img/project5.png" alt="porjects image" class="projects__img">
+            <div class="projects__modal">
+              <span class="projects__subtitle">Amazon simulator in Python and RabbitMQ</span>
+              <h2 class="projects__title">Saimazoom</h2>
+
+              <a href="https://github.com/Willygap1572/Saimazoom" class="projects__button">
+                View code <i class="ri-external-link-line "></i>
+              </a>
+            </div>
           </article>
 
-          <article class="project__card">
-            <h3 class="project__title">Project6</h3>
-            <p class="project__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque a nihil? Magni, placeat. Hic
-              illo, provident nemo, eius officiis saepe quo totam temporibus aut expedita dolore. Quasi, animi alias!
-            </p>
+          <article class="projects__card">
+            <img src="assets/img/project6.png" alt="porjects image" class="projects__img">
+            <div class="projects__modal">
+              <span class="projects__subtitle">This page!</span>
+              <h2 class="projects__title">Portfolio</h2>
+
+              <a href="https://github.com/Willygap1572/Empathy-portfolio" class="projects__button">
+                View code <i class="ri-external-link-line "></i>
+              </a>
+            </div>
           </article>
         </div>
       </div>
     </section>
-    <section class="contact section" id="contact"></section>
+    <section class="contact section" id="contact">
+
+      <h3 class="section__subtitle">Les's get <span>In touch!</span></h3>
+      <h2 class="section__title">Contact Me</h2>
+
+      <div class="contact__container container grid">
+        <form action="" class="contact__form" id="contact-form">
+          <div class="contact__data" id="contact-data">
+            <input type="text" class="contact__name" id="contact-name" required placeholder="Enter your name">
+            <input type="email" class="contact__email" id="contact-email" required placeholder="Enter your email">
+          </div>
+          <textarea name="contact__text" id="contact-text" required placeholder="Enter your message"
+            class="contact__text"></textarea>
+
+            <button class="button contact__button" id="contact-button" type="submit">
+              Send Message
+            </button>
+        </form>
+      </div>
+
+    </section>
   </main>
 </body>
 
