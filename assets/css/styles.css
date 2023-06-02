@@ -114,7 +114,7 @@ svg {
 }
 
 .section {
-    padding-block: 7rem 2rem;
+    padding-block: 5rem 2rem;
     align-items: center;
 }
 
@@ -298,9 +298,11 @@ svg {
 }
 
 .skills__container {
+    position: relative;
     grid-template-columns: 340px 425px;
     column-gap: 10rem;
     padding-bottom: 4rem;
+    justify-content: center;
 }
 
 .skills__description {
@@ -308,7 +310,7 @@ svg {
 }
 
 .skills__content,
-.skills__group {
+.skills__block {
     display: grid;
     column-gap: 8rem;
 }
@@ -317,10 +319,10 @@ svg {
     grid-template-columns: repeat(2, max-content);
     column-gap: 8rem;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 
-.skills__group {
+.skills__block {
     row-gap: 1.5rem;
     list-style: decimal-leading-zero;
 }
@@ -492,4 +494,50 @@ svg {
 .contact__button {
     justify-self: center;
     cursor: pointer;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: var(--container-color);
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    padding-block: 2rem 3rem;
+}
+
+.footer__title {
+    font-size: var(--h2-font-size);
+    margin-left: 2rem;
+}
+
+.footer__title span {
+    color: var(--first-color);
+}
+
+.footer__socials {
+    display: flex;
+    justify-self: center;
+    column-gap: 2rem;
+    flex-direction: row;
+    
+}
+
+.footer__social-link {
+    display: flex;
+    position: relative;
+    background-color: var(--first-color-alt);
+    padding: .5rem;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: transform .4s;
+}
+
+.footer__social-link:hover {
+    transform: translateY(-.25rem);
+}
+
+.footer__copy {
+    margin-right: 2rem;
 }

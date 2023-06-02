@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -37,12 +37,12 @@
             <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
-
       </div>
     </nav>
   </header>
 
   <main class="main" id="main">
+
     <section class="home section" id="home">
       <div class="home__container container grid">
         <div class="home__content">
@@ -178,15 +178,14 @@
             <li class="skills__item">SQL</li>
           </ol>
           <ol class="skills__block" start="5">
-            <li class="skills__item">HTML</li>
+            <li class="skills__item">HTML & CSS</li>
             <li class="skills__item">JavaScript</li>
-            <li class="skills__item">CSS</li>
+            <li class="skills__item">GIT & Github</li>
             <li class="skills__item">Django</li>
           </ol>
         </div>
       </div>
     </section>
-
 
     <section class="services section" id="services">
       <div class="services__container container grid">
@@ -227,7 +226,7 @@
 
         <div class="projects__data">
           <article class="projects__card">
-            <img src="assets/img/project1.png" alt="porjects image" class="projects__img">
+          <figure><img src="assets/img/project1.png" alt="porjects image" class="projects__img"></figure>
             <div class="projects__modal">
               <span class="projects__subtitle">MQTT</span>
               <h2 class="projects__title">Domotics</h2>
@@ -239,7 +238,7 @@
           </article>
 
           <article class="projects__card">
-            <img src="assets/img/project2.png" alt="porjects image" class="projects__img">
+            <figure><img src="assets/img/project2.png" alt="porjects image" class="projects__img"></figure>
             <div class="projects__modal">
               <span class="projects__subtitle">Server</span>
               <h2 class="projects__title">HTTP Server</h2>
@@ -251,7 +250,7 @@
           </article>
 
           <article class="projects__card">
-            <img src="assets/img/project3.png" alt="porjects image" class="projects__img">
+            <figure><img src="assets/img/project3.png" alt="porjects image" class="projects__img"></figure>
             <div class="projects__modal">
               <span class="projects__subtitle">DJANGO Web page</span>
               <h2 class="projects__title">Kahoot Clone Server</h2>
@@ -263,7 +262,7 @@
           </article>
 
           <article class="projects__card">
-            <img src="assets/img/project3.png" alt="porjects image" class="projects__img">
+            <figure><img src="assets/img/project3.png" alt="porjects image" class="projects__img"></figure>
             <div class="projects__modal">
               <span class="projects__subtitle">VUE.js Web page</span>
               <h2 class="projects__title">Kahoot Clone Client</h2>
@@ -275,7 +274,7 @@
           </article>
 
           <article class="projects__card">
-            <img src="assets/img/project5.png" alt="porjects image" class="projects__img">
+            <figure><img src="assets/img/project5.png" alt="porjects image" class="projects__img"></figure>
             <div class="projects__modal">
               <span class="projects__subtitle">Amazon simulator in Python and RabbitMQ</span>
               <h2 class="projects__title">Saimazoom</h2>
@@ -287,7 +286,7 @@
           </article>
 
           <article class="projects__card">
-            <img src="assets/img/project6.png" alt="porjects image" class="projects__img">
+            <figure><img src="assets/img/project6.png" alt="porjects image" class="projects__img"></figure>
             <div class="projects__modal">
               <span class="projects__subtitle">This page!</span>
               <h2 class="projects__title">Portfolio</h2>
@@ -300,13 +299,14 @@
         </div>
       </div>
     </section>
+
     <section class="contact section" id="contact">
 
       <h3 class="section__subtitle">Les's get <span>In touch!</span></h3>
       <h2 class="section__title">Contact Me</h2>
 
       <div class="contact__container container grid">
-        <form action="" class="contact__form" id="contact-form">
+        <form action="POST" class="contact__form" id="contact-form">
           <div class="contact__data" id="contact-data">
             <input type="text" class="contact__name" id="contact-name" required placeholder="Enter your name">
             <input type="email" class="contact__email" id="contact-email" required placeholder="Enter your email">
@@ -314,14 +314,33 @@
           <textarea name="contact__text" id="contact-text" required placeholder="Enter your message"
             class="contact__text"></textarea>
 
-            <button class="button contact__button" id="contact-button" type="submit">
-              Send Message
-            </button>
+          <button class="button contact__button" id="contact-button" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
 
     </section>
+
   </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer__title">Guillermo <span>de Andrés</span></div>
+
+    <div class="footer__socials">
+      <a href="https://github.com/Willygap1572" target="_blank" class="footer__social-link">
+        <i class="ri-github-fill"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/guillermo-de-andrés-pérez-137339226/" target="_blank"
+        class="footer__social-link">
+        <i class="ri-linkedin-box-fill"></i>
+      </a>
+    </div>
+
+    <div class="footer__copy">
+      &#169 All rights reserved
+    </div>
+  </footer>
 </body>
 
 </html>
