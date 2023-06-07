@@ -14,13 +14,15 @@
 </head>
 
 <body class="body" id="body">
+
   <header class="header" id="header">
-    <a href="#home" class="nav__logo">
-      Guillermo <span>de Andrés</span>
-    </a>
-    <nav class="container nav">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        Guillermo <span>de Andrés</span>
+      </a>
+
       <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list" id="nav-list">
+        <ul class="nav__list">
           <li class="nav__item">
             <a href="#home" class="nav__link">Home</a>
           </li>
@@ -40,13 +42,18 @@
             <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
       </div>
     </nav>
-
   </header>
 
-  <main class="main" id="main">
-
+  <main class="main">
     <section class="home section" id="home">
       <div class="home__container container grid">
         <div class="home__content">
@@ -62,8 +69,7 @@
               problem-solving.
               This portfolio showcases my diverse projects and skills.
               With a solid foundation in languages like Python, Java, and C. I excel in collaborative environments,
-              delivering efficient and innovative software solutions.
-            </p>
+              delivering efficient and innovative software solutions.</p>
             <a href="#contact" class="button">Contact me!</a>
           </div>
 
@@ -81,17 +87,17 @@
           <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
             <mask id="maskBlob" mask-type="alpha">
               <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                   170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                   447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                   587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                   438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+                           170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                           447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                           587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                           438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
             </mask>
             <g mask="url(#maskBlob)">
               <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                   170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                   447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                   587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                   438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+                           170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                           447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                           587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                           438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
 
               <rect x="37" width="476" height="630" fill="url(#pattern0)" />
             </g>
@@ -107,33 +113,49 @@
                 <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
               </pattern>
 
-              <!-- Insert your profile (recommended size: 640 x 940) -->
               <image class="home__img" id="imageBlob" width="640" height="925" href="assets/img/gde-andr.png" />
             </defs>
           </svg>
         </div>
       </div>
     </section>
-
     <section class="about section" id="about">
       <div class="about__container container grid">
+        <div class="about__data">
+          <h3 class="section__subtitle">
+            My <span>Intro</span>
+          </h3>
+          <h2 class="section__title">
+            About Me
+          </h2>
+          <p class="about__description">
+            I am a student of computer engineering at the Universidad Autónoma de Madrid, and the programming school
+            42Madrid. I am currently looking for software development internships to get into the world of programming
+            and product development, but mostly to improve my skills.
+            Among my hobbies are playing video games, scuba diving, and watching series or movies.
+          </p>
+
+          <a href="#contact" class="button">Contact Me</a>
+        </div>
+
         <div class="about__image">
           <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="maskBorder" mask-type="alpha">
               <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
-               171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
-               448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
-               270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
-               439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black" />
+                           171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                           448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                           270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                           439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black" />
             </mask>
             <g mask="url(#maskBorder)">
               <rect x="37" width="476" height="630" fill="url(#pattern2)" />
 
               <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
-               192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
-               580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
-               40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
-               175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10" />
+                           192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                           580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                           40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                           175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black"
+                stroke-width="10" />
             </g>
 
             <rect x="37" width="476" height="300" fill="url(#pattern3)" />
@@ -146,225 +168,243 @@
               <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
               </pattern>
-
-              <!-- Insert your profile (recommended size: 640 x 940) -->
               <image class="about__img" id="imageBorder" width="640" height="940" href="assets/img/gde-andr.png" />
             </defs>
           </svg>
         </div>
-        <div class="about__data">
-          <h3 class="section__subtitle">My <span>Intro</span></h3>
-          <h2 class="section__title">About Me</h2>
-          <p class="section__description">
-            I am a student of computer engineering at the Universidad Autónoma de Madrid,
-            and the programming school 42Madrid. I am currently looking for software development internships to get into
-            the world of programming and product development, but mostly to improve my skills.
-            Among my hobbies are playing video games, scuba diving, and watching series or movies.
-          </p>
-          <a href="#contact" class="button">Contact me!</a>
-        </div>
       </div>
     </section>
-
-    <section class="skills section" id="skills">
+    <section class="skills section">
       <div class="skills__container container grid">
         <div class="skills__data">
-          <h3 class="section__subtitle">Favourite <span>Skills</span></h3>
-          <h2 class="section__title">My Skills</h2>
-          <p class="section__description">
-            These are some of the skills I have gained over the past 4 years, during my university studies and my stay at 42Madrid.
+          <h3 class="section__subtitle">
+            Favourite <span> Skills</span>
+          </h3>
+          <h2 class="section__title">
+            My Skills
+          </h2>
+
+          <p class="skills__description">
+            These are some of the skills I have gained over the past 4 years, during my university studies and my stay
+            at 42Madrid.
           </p>
+
+          <a href="#projects" class="button">See projects</a>
+
         </div>
+
         <div class="skills__content">
-          <ol class="skills__block">
-            <li class="skills__item">C</li>
-            <li class="skills__item">Pyhton</li>
-            <li class="skills__item">Java</li>
-            <li class="skills__item">SQL</li>
-          </ol>
-          <ol class="skills__block" start="5">
+          <ol class="skils__group">
             <li class="skills__item">HTML & CSS</li>
-            <li class="skills__item">JavaScript</li>
-            <li class="skills__item">GIT & Github</li>
-            <li class="skills__item">Django</li>
+            <li class="skills__item">DJANGO</li>
+            <li class="skills__item">Python</li>
+            <li class="skills__item">Java</li>
+          </ol>
+          <ol class="skils__group" start="5">
+            <li class="skills__item">C</li>
+            <li class="skills__item">SQL</li>
+            <li class="skills__item">Git & Github</li>
+            <li class="skills__item">Ubuntu</li>
           </ol>
         </div>
       </div>
     </section>
 
     <section class="services section" id="services">
-      <div class="services__container container grid">
-        <h3 class="section__subtitle">My <span>Services</span></h3>
-        <h2 class="section__title">What I do?</h2>
+      <h3 class="section__subtitle">
+        My <span>Services</span>
+      </h3>
+      <h2 class="section__title">
+        What I Do
+      </h2>
 
-        <div class="services__data">
-          <article class="services__card">
-            <i class="ri-pie-chart-line services__icon"></i>
-            <h3 class="services__title">Data Analyst</h3>
-            <p class="services__description">
-              I learned data analysis during my artificial intelligence course at university. I use python as my main
-              language but I also know how to use excel and a bit of R for statistical analysis.
-            </p>
-          </article>
-          <article class="services__card">
-            <i class="ri-code-s-slash-line services__icon"></i>
-            <h3 class="services__title">DJANGO Developer</h3>
-            <p class="services__description">
-              Probably one of the skills that I focused on the most during my degree, as there were many Django projects
-              such as Domotics, KahootClone and many others.
-            </p>
-          </article>
-          <article class="services__card">
-            <i class="ri-blender-fill services__icon"></i>
-            <h3 class="services__title">3D Model</h3>
-            <p class="services__description">
-              Completely self-taught with tutorials and internet courses. Having a 3D printer did not suit me just to
-              print parts created by other people, although I still have a lot to learn and I keep improving day by day.
-            </p>
-          </article>
-        </div>
+      <div class="services__container container grid">
+        <article class="services__card">
+          <i class="ri-pie-chart-line services__icon"></i>
+          <h2 class="services__title">Data Analyst</h2>
+
+          <p class="services__description">
+            I learned data analysis during my artificial intelligence course at university. I use python as my main
+            language but I also know how to use excel and a bit of R for statistical analysis.
+          </p>
+        </article>
+
+        <article class="services__card">
+          <i class="ri-code-s-slash-line services__icon"></i>
+          <h2 class="services__title">DJANGO Developer</h2>
+
+          <p class="services__description">
+            Probably one of the skills that I focused on the most during my degree, as there were many Django projects
+            such as Domotics, KahootClone and many others.
+          </p>
+        </article>
+
+        <article class="services__card">
+          <i class="ri-blender-fill services__icon"></i>
+          <h2 class="services__title">3D Model</h2>
+
+          <p class="services__description">
+            Completely self-taught with tutorials and internet courses. Having a 3D printer did not suit me just to
+            print parts created by other people, although I still have a lot to learn and I keep improving day by day.
+          </p>
+        </article>
       </div>
     </section>
-
     <section class="projects section" id="projects">
+      <h3 class="section__subtitle">
+        My <span>Jobs</span>
+      </h3>
+
+      <h2 class="section__title">
+        Recent Projects
+      </h2>
+
       <div class="projects__container container grid">
+        <article class="projects__card">
+          <figure><img src="assets/img/project1.png" alt="porjects image" class="projects__img"></figure>
+          <div class="projects__modal">
+            <span class="projects__subtitle">MQTT</span>
+            <h2 class="projects__title">Domotics</h2>
 
-        <h3 class="section__subtitle">My <span>Jobs</span></h3>
-        <h2 class="section__title">Recent Projects</h2>
+            <a href="https://github.com/Willygap1572/Domotics" class="projects__button">
+              View code <i class="ri-external-link-line "></i>
+            </a>
+          </div>
+        </article>
 
-        <div class="projects__data">
-          <article class="projects__card">
-            <figure><img src="assets/img/project1.png" alt="porjects image" class="projects__img"></figure>
-            <div class="projects__modal">
-              <span class="projects__subtitle">MQTT</span>
-              <h2 class="projects__title">Domotics</h2>
+        <article class="projects__card">
+          <figure><img src="assets/img/project2.png" alt="porjects image" class="projects__img"></figure>
+          <div class="projects__modal">
+            <span class="projects__subtitle">Server</span>
+            <h2 class="projects__title">HTTP Server</h2>
 
-              <a href="https://github.com/Willygap1572/Domotics" class="projects__button">
-                View code <i class="ri-external-link-line "></i>
-              </a>
-            </div>
-          </article>
+            <a href="https://github.com/Willygap1572/HTTP-server" class="projects__button">
+              View code <i class="ri-external-link-line "></i>
+            </a>
+          </div>
+        </article>
 
-          <article class="projects__card">
-            <figure><img src="assets/img/project2.png" alt="porjects image" class="projects__img"></figure>
-            <div class="projects__modal">
-              <span class="projects__subtitle">Server</span>
-              <h2 class="projects__title">HTTP Server</h2>
+        <article class="projects__card">
+          <figure><img src="assets/img/project3.png" alt="porjects image" class="projects__img"></figure>
+          <div class="projects__modal">
+            <span class="projects__subtitle">DJANGO Web page</span>
+            <h2 class="projects__title">Kahoot Clone Server</h2>
 
-              <a href="https://github.com/Willygap1572/HTTP-server" class="projects__button">
-                View code <i class="ri-external-link-line "></i>
-              </a>
-            </div>
-          </article>
+            <a href="https://github.com/Willygap1572/kahootClone-DjangoServer" class="projects__button">
+              View code <i class="ri-external-link-line "></i>
+            </a>
+            <a href="https://kahoot-clone-tqte.onrender.com/" class="projects__button">
+              View page <i class="ri-global-line"></i>
+            </a>
+            <a href="https://kahoot-clone-tqte.onrender.com/api/" class="projects__button">
+              View API <i class="ri-settings-3-fill"></i>
+            </a>
+          </div>
+        </article>
 
-          <article class="projects__card">
-            <figure><img src="assets/img/project3.png" alt="porjects image" class="projects__img"></figure>
-            <div class="projects__modal">
-              <span class="projects__subtitle">DJANGO Web page</span>
-              <h2 class="projects__title">Kahoot Clone Server</h2>
+        <article class="projects__card">
+          <figure><img src="assets/img/project3.png" alt="porjects image" class="projects__img"></figure>
+          <div class="projects__modal">
+            <span class="projects__subtitle">VUE.js Web page</span>
+            <h2 class="projects__title">Kahoot Clone Client</h2>
 
-              <a href="https://github.com/Willygap1572/kahootClone-DjangoServer" class="projects__button">
-                View code <i class="ri-external-link-line "></i>
-              </a>
-              <a href="https://kahoot-clone-tqte.onrender.com/" class="projects__button">
-                View page <i class="ri-global-line"></i>
-              </a>
-              <a href="https://kahoot-clone-tqte.onrender.com/api/" class="projects__button">
-                View API <i class="ri-settings-3-fill"></i>
-              </a>
-            </div>
-          </article>
+            <a href="https://github.com/Willygap1572/kahootClone-vueClient" class="projects__button">
+              View code <i class="ri-external-link-line "></i>
+            </a>
+            <a href="https://vueclient-xng7.onrender.com" class="projects__button">
+              View page <i class="ri-global-line"></i>
+            </a>
+          </div>
+        </article>
 
-          <article class="projects__card">
-            <figure><img src="assets/img/project3.png" alt="porjects image" class="projects__img"></figure>
-            <div class="projects__modal">
-              <span class="projects__subtitle">VUE.js Web page</span>
-              <h2 class="projects__title">Kahoot Clone Client</h2>
+        <article class="projects__card">
+          <figure><img src="assets/img/project5.png" alt="porjects image" class="projects__img"></figure>
+          <div class="projects__modal">
+            <span class="projects__subtitle">Amazon simulator in Python and RabbitMQ</span>
+            <h2 class="projects__title">Saimazoom</h2>
 
-              <a href="https://github.com/Willygap1572/kahootClone-vueClient" class="projects__button">
-                View code <i class="ri-external-link-line "></i>
-              </a>
-              <a href="https://vueclient-xng7.onrender.com" class="projects__button">
-                View page <i class="ri-global-line"></i>
-              </a>
-            </div>
-          </article>
+            <a href="https://github.com/Willygap1572/Saimazoom" class="projects__button">
+              View code <i class="ri-external-link-line "></i>
+            </a>
+          </div>
+        </article>
 
-          <article class="projects__card">
-            <figure><img src="assets/img/project5.png" alt="porjects image" class="projects__img"></figure>
-            <div class="projects__modal">
-              <span class="projects__subtitle">Amazon simulator in Python and RabbitMQ</span>
-              <h2 class="projects__title">Saimazoom</h2>
+        <article class="projects__card">
+          <figure><img src="assets/img/project6.png" alt="porjects image" class="projects__img"></figure>
+          <div class="projects__modal">
+            <span class="projects__subtitle">This page!</span>
+            <h2 class="projects__title">Portfolio</h2>
 
-              <a href="https://github.com/Willygap1572/Saimazoom" class="projects__button">
-                View code <i class="ri-external-link-line "></i>
-              </a>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <figure><img src="assets/img/project6.png" alt="porjects image" class="projects__img"></figure>
-            <div class="projects__modal">
-              <span class="projects__subtitle">This page!</span>
-              <h2 class="projects__title">Portfolio</h2>
-
-              <a href="https://github.com/Willygap1572/Empathy-portfolio" class="projects__button">
-                View code <i class="ri-external-link-line "></i>
-              </a>
-              <a href="#home" class="projects__button">
-                View page <i class="ri-global-line"></i>
-              </a>
-            </div>
-          </article>
-        </div>
+            <a href="https://github.com/Willygap1572/Empathy-portfolio" class="projects__button">
+              View code <i class="ri-external-link-line "></i>
+            </a>
+            <a href="#home" class="projects__button">
+              View page <i class="ri-global-line"></i>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="contact section" id="contact">
-
-      <h3 class="section__subtitle">Les's get <span>In touch!</span></h3>
-      <h2 class="section__title">Contact Me</h2>
+      <h3 class="section__subtitle">
+        Get In <span>Touch</span>
+      </h3>
+      <h2 class="section__title">
+        Contact Me
+      </h2>
 
       <div class="contact__container container grid">
-        <form action="GET" class="contact__form" id="contact-form">
-          <div class="contact__data" id="contact-data">
-            <input type="text" class="contact__name" id="contact-name" required placeholder="Enter your name">
-            <input type="email" class="contact__email" id="contact-email" required placeholder="Enter your email">
+        <form action="" class="contact__form" id="contact-form">
+          <div class="contact__group">
+            <input type="text" id="contact-name" name="user_name" required placeholder="Enter your name"
+              class="contact__input">
+            <input type="email" id="contact-email" name="user_email" required placeholder="Enter your email"
+              class="contact__input">
           </div>
-          <textarea name="contact__text" id="contact-text" required placeholder="Enter your message"
-            class="contact__text"></textarea>
+          <textarea name="user_project" id="contact-project" class="contact__input" required
+            placeholder="Enter your message"></textarea>
 
-          <button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button contact__button" id="contact-button"
-            type="submit">
+          <p class="contact__message" id="contact-message"></p>
+
+          <button class="button contact__button" id="contact-button" type="submit">
             Send Message
           </button>
         </form>
       </div>
-
     </section>
-
-    <a href="#home" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
-    </a>
   </main>
 
-  <footer class="footer" id="footer">
-    <div class="footer__title">Guillermo <span>de Andrés</span></div>
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div>
+        <h1 class="footer__title">
+          Guillermo <span> de Andrés</span>
+        </h1>
 
-    <div class="footer__socials">
-      <a href="https://github.com/Willygap1572" target="_blank" class="footer__social-link">
-        <i class="ri-github-fill"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/guillermo-de-andrés-pérez-137339226/" target="_blank"
-        class="footer__social-link">
-        <i class="ri-linkedin-box-fill"></i>
-      </a>
-    </div>
+        <h2 class="footer__education">
+          Computer Science
+        </h2>
+      </div>
+      <div class="footer__social">
+        <a href="https://github.com/Willygap1572" target="_blank" class="footer__social-link">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/guillermo-de-andrés-pérez-137339226/" target="_blank"
+          class="footer__social-link">
+          <i class="ri-linkedin-box-fill"></i>
+        </a>
+      </div>
 
-    <div class="footer__copy">
-      &#169 All rights reserved
+      <span class="footer__copy">
+        &#169; Copytight Willygap1572. All rights reserved
+      </span>
     </div>
   </footer>
+  <a href="#home" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
 </body>
+
 
 </html>
