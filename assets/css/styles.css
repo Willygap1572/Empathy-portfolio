@@ -132,10 +132,13 @@ svg {
 
 .header {
     position: fixed;
+    display: flex;
     width: 100%;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav {
@@ -148,15 +151,16 @@ svg {
 }
 
 .nav__list {
-
     display: flex;
     flex-direction: row;
     column-gap: 3rem;
+    margin-right: 1rem;
 }
 
 .nav__logo {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
+    margin-left: 1.5rem;
 }
 
 .nav__logo span {
@@ -171,6 +175,7 @@ svg {
 .nav__link:hover {
     color: var(--first-color);
 }
+
 
 .button {
     display: inline-block;
@@ -359,19 +364,22 @@ svg {
 }
 
 .services__card {
+    height: 20rem;
     background-color: var(--container-color);
+    border: 1px solid var(--container-color);
     padding: 3rem 1.25rem;
     align-items: center;
     text-align: center;
 }
 
 .services__card:hover {
-    border: 2px solid var(--first-color);
+    border: 1px solid var(--first-color);
 }
 
 .services__title {
     margin-bottom: 2rem;
 }
+
 
 .services__icon {
     display: block;
@@ -541,3 +549,29 @@ svg {
 .footer__copy {
     margin-right: 2rem;
 }
+
+/*SCROLLUP*/
+
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: 3%;
+    background-color: var(--body-color);
+    padding: 6px;
+    display: inline-flex;
+    border-radius: .25rem;
+    color: var(--first-color);
+    font-size: 1.25rem;
+    box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
+

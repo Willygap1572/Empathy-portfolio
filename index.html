@@ -15,10 +15,10 @@
 
 <body class="body" id="body">
   <header class="header" id="header">
+    <a href="#home" class="nav__logo">
+      Guillermo <span>de Andrés</span>
+    </a>
     <nav class="container nav">
-      <a href="#home" class="nav__logo">
-        Guillermo <span>de Andrés</span>
-      </a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list" id="nav-list">
           <li class="nav__item">
@@ -26,6 +26,9 @@
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
           </li>
           <li class="nav__item">
             <a href="#services" class="nav__link">Services</a>
@@ -39,6 +42,7 @@
         </ul>
       </div>
     </nav>
+
   </header>
 
   <main class="main" id="main">
@@ -53,9 +57,12 @@
             <h1 class="home__title">Guillermo de Andrés</h1>
             <h3 class="home__education">Computer Science</h3>
             <p class="home__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates beatae deserunt
-              aperiam minus asperiores itaque vitae exercitationem delectus, ipsam consequuntur id laborum
-              minima totam eius quae ut earum quos?
+              Welcome to my Portfolio!
+              I'm Guillermo de Andrés, a student of Computer Engineering with a strong passion for coding and
+              problem-solving.
+              This portfolio showcases my diverse projects and skills.
+              With a solid foundation in languages like Python, Java, and C. I excel in collaborative environments,
+              delivering efficient and innovative software solutions.
             </p>
             <a href="#contact" class="button">Contact me!</a>
           </div>
@@ -148,10 +155,12 @@
         <div class="about__data">
           <h3 class="section__subtitle">My <span>Intro</span></h3>
           <h2 class="section__title">About Me</h2>
-          <p class="section__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sed tempora
-            ut
-            enim? Eaque veniam ea vel maxime dicta perspiciatis excepturi atque dolore! Repudiandae voluptates
-            reiciendis quis assumenda deserunt mollitia?</p>
+          <p class="section__description">
+            I am a student of computer engineering at the Universidad Autónoma de Madrid,
+            and the programming school 42Madrid. I am currently looking for software development internships to get into
+            the world of programming and product development, but mostly to improve my skills.
+            Among my hobbies are playing video games, scuba diving, and watching series or movies.
+          </p>
           <a href="#contact" class="button">Contact me!</a>
         </div>
       </div>
@@ -162,13 +171,9 @@
         <div class="skills__data">
           <h3 class="section__subtitle">Favourite <span>Skills</span></h3>
           <h2 class="section__title">My Skills</h2>
-
           <p class="section__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam neque voluptate inventore accusantium
-            similique
-            rerum soluta molestias dolor quod sequi delectus aperiam asperiores quo velit nihil, totam at. Amet, earum?
+            These are some of the skills I have gained over the past 4 years, during my university studies and my stay at 42Madrid.
           </p>
-
         </div>
         <div class="skills__content">
           <ol class="skills__block">
@@ -196,23 +201,26 @@
           <article class="services__card">
             <i class="ri-pie-chart-line services__icon"></i>
             <h3 class="services__title">Data Analyst</h3>
-            <p class="services__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis non
-              repudiandae quibusdam. Asperiores, quisquam? Est placeat tenetur nulla, ipsum, dolores saepe quibusdam,
-              odit hic distinctio deleniti sit dicta alias odio?</p>
+            <p class="services__description">
+              I learned data analysis during my artificial intelligence course at university. I use python as my main
+              language but I also know how to use excel and a bit of R for statistical analysis.
+            </p>
           </article>
           <article class="services__card">
             <i class="ri-code-s-slash-line services__icon"></i>
             <h3 class="services__title">DJANGO Developer</h3>
-            <p class="services__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis non
-              repudiandae quibusdam. Asperiores, quisquam? Est placeat tenetur nulla, ipsum, dolores saepe quibusdam,
-              odit hic distinctio deleniti sit dicta alias odio?</p>
+            <p class="services__description">
+              Probably one of the skills that I focused on the most during my degree, as there were many Django projects
+              such as Domotics, KahootClone and many others.
+            </p>
           </article>
           <article class="services__card">
             <i class="ri-blender-fill services__icon"></i>
             <h3 class="services__title">3D Model</h3>
-            <p class="services__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis non
-              repudiandae quibusdam. Asperiores, quisquam? Est placeat tenetur nulla, ipsum, dolores saepe quibusdam,
-              odit hic distinctio deleniti sit dicta alias odio?</p>
+            <p class="services__description">
+              Completely self-taught with tutorials and internet courses. Having a 3D printer did not suit me just to
+              print parts created by other people, although I still have a lot to learn and I keep improving day by day.
+            </p>
           </article>
         </div>
       </div>
@@ -226,7 +234,7 @@
 
         <div class="projects__data">
           <article class="projects__card">
-          <figure><img src="assets/img/project1.png" alt="porjects image" class="projects__img"></figure>
+            <figure><img src="assets/img/project1.png" alt="porjects image" class="projects__img"></figure>
             <div class="projects__modal">
               <span class="projects__subtitle">MQTT</span>
               <h2 class="projects__title">Domotics</h2>
@@ -258,6 +266,12 @@
               <a href="https://github.com/Willygap1572/kahootClone-DjangoServer" class="projects__button">
                 View code <i class="ri-external-link-line "></i>
               </a>
+              <a href="https://kahoot-clone-tqte.onrender.com/" class="projects__button">
+                View page <i class="ri-global-line"></i>
+              </a>
+              <a href="https://kahoot-clone-tqte.onrender.com/api/" class="projects__button">
+                View API <i class="ri-settings-3-fill"></i>
+              </a>
             </div>
           </article>
 
@@ -269,6 +283,9 @@
 
               <a href="https://github.com/Willygap1572/kahootClone-vueClient" class="projects__button">
                 View code <i class="ri-external-link-line "></i>
+              </a>
+              <a href="https://vueclient-xng7.onrender.com" class="projects__button">
+                View page <i class="ri-global-line"></i>
               </a>
             </div>
           </article>
@@ -294,6 +311,9 @@
               <a href="https://github.com/Willygap1572/Empathy-portfolio" class="projects__button">
                 View code <i class="ri-external-link-line "></i>
               </a>
+              <a href="#home" class="projects__button">
+                View page <i class="ri-global-line"></i>
+              </a>
             </div>
           </article>
         </div>
@@ -306,7 +326,7 @@
       <h2 class="section__title">Contact Me</h2>
 
       <div class="contact__container container grid">
-        <form action="POST" class="contact__form" id="contact-form">
+        <form action="GET" class="contact__form" id="contact-form">
           <div class="contact__data" id="contact-data">
             <input type="text" class="contact__name" id="contact-name" required placeholder="Enter your name">
             <input type="email" class="contact__email" id="contact-email" required placeholder="Enter your email">
@@ -314,7 +334,8 @@
           <textarea name="contact__text" id="contact-text" required placeholder="Enter your message"
             class="contact__text"></textarea>
 
-          <button class="button contact__button" id="contact-button" type="submit">
+          <button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button contact__button" id="contact-button"
+            type="submit">
             Send Message
           </button>
         </form>
@@ -322,6 +343,9 @@
 
     </section>
 
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
   </main>
 
   <footer class="footer" id="footer">
